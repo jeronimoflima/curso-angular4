@@ -17,6 +17,8 @@ export class DataBindingComponent implements OnInit {
 
   valorS;
 
+  nome: string = 'abc';
+
   getValor(){
     return 1;
   }
