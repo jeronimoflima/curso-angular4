@@ -13,6 +13,8 @@ export class DataBindingComponent implements OnInit {
 
   isMouseOver: boolean = false;
 
+  nomeDoCurso: string = "Angular";
+
   urlImagem = 'http://lorempixel.com/400/200/nature/';
 
   valorS;
@@ -54,8 +56,13 @@ export class DataBindingComponent implements OnInit {
   valorSalvo(valor){
     this.valorS = valor;
 
-
   }
+
+  onMudouValor(evento){
+    console.log(evento.novoValor);
+  }
+
+
 
   constructor() { }
 

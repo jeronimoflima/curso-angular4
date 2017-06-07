@@ -6,11 +6,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { InputPropertComponent } from './input-propert/input-propert.component';
+import { OutputPropertComponent } from './output-propert/output-propert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    InputPropertComponent,
+    OutputPropertComponent
 
   ],
   imports: [
