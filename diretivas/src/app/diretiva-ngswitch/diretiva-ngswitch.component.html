@@ -1,0 +1,30 @@
+<nav class="navbar navbar-dark bg-light">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+
+    <a class="navbar-brand nav-link" [class.active]="aba == 'home'" (cick)="aba = 'home'">Home</a>
+
+    <a class="navbar-brand nav-link" [class.active]="aba == 'mapa'" (cick)="aba = 'mapa'">Mapa</a>
+
+    <a class="navbar-brand nav-link" [class.active]="aba == 'lista'" (cick)="aba = 'lista'">Lista</a>
+
+
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<div class="container" [ngSwitch]="aba">// opção 1
+  <p *ngSwitchCase="'mapa'">Modo Mapa ativado</p>
+
+  <div class="container" [ngSwitch]="aba" > // opção 2 - com template
+    <template [ngSwitchCase]="'mapa'">
+      <p>Modo Ativado</p>
+
+  </div>
+
+
+  <p *ngSwitchCase="'lista'">Modo Lista ativado</p>
+  <p *ngSwitchDefault>Home</p>
+
+</div>
